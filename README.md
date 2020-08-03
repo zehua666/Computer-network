@@ -1,5 +1,5 @@
 # mt-service-and-client
-# CSC 425 - Computer Network
+# Computer Network
 Milestone 1: Implement a simple TCP client-server application.
 Write a TCP client and a server passing messages between them. The message format is as follows.
 Length of Payload
@@ -125,7 +125,7 @@ To address all these issues, you need to define a packet format for messages bet
 
 A successful project should make a telnet session survive host mobility, i.e., resume it after the new address is added.
 
-EXTRA CREDITS for Reliable Transfer
+Reliable Transfer
 If you wait some time, e.g., 5-10 seconds, before adding the new address, some ping output will be lost because they are sent to the old address that no long exists. This will be shown as a gap in icmp_seq when the session is resumed. This doesn’t affect much in our telnet/ping example, but may break other applications if the lost data is critical. You’re encouraged to fix this problem as follows to get extra credit.
 
 To identify which data have been lost and be able to retransmit them once the session is resumed, we will need a sequence number (SeqN) for every data message, and include an acknowledgement number (AckN)as well, pretty much the same mechanism used by TCP to ensure reliable transfer.
