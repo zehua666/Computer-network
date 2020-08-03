@@ -1,5 +1,4 @@
-# mt-service-and-client
-# Computer Network
+# service-and-client
 Milestone 1: Implement a simple TCP client-server application.
 Write a TCP client and a server passing messages between them. The message format is as follows.
 Length of Payload
